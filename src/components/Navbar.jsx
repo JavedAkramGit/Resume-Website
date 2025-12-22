@@ -7,8 +7,8 @@ const NavLink = ({ to, children, onClick, active }) => (
         to={to}
         onClick={onClick}
         className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${active
-                ? 'bg-blue-600 text-white shadow-md'
-                : 'text-slate-600 hover:bg-slate-100 hover:text-blue-600'
+            ? 'bg-blue-600 text-white shadow-md'
+            : 'text-slate-600 hover:bg-slate-100 hover:text-blue-600'
             }`}
     >
         {children}
@@ -76,6 +76,9 @@ const Navbar = () => {
                                     <Link to="/achievements/ai" className="group flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600">
                                         <Brain className="mr-3 h-4 w-4 text-slate-400 group-hover:text-indigo-500" /> AI Infrastructure
                                     </Link>
+                                    <Link to="/achievements/leadership" className="group flex items-center px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600">
+                                        <Activity className="mr-3 h-4 w-4 text-slate-400 group-hover:text-teal-500" /> Leadership & Gov.
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -111,6 +114,7 @@ const Navbar = () => {
                                 <NavLink to="/achievements/test-automation" active={isActive('/achievements/test-automation')} onClick={() => setIsOpen(false)}>Test Automation</NavLink>
                                 <NavLink to="/achievements/performance" active={isActive('/achievements/performance')} onClick={() => setIsOpen(false)}>Performance Eng.</NavLink>
                                 <NavLink to="/achievements/ai" active={isActive('/achievements/ai')} onClick={() => setIsOpen(false)}>AI Infrastructure</NavLink>
+                                <NavLink to="/achievements/leadership" active={isActive('/achievements/leadership')} onClick={() => setIsOpen(false)}>Leadership & Gov.</NavLink>
                             </MobileSubMenu>
                         </div>
 

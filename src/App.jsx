@@ -11,6 +11,7 @@ import CloudDevOpsGitOpsAchievements from './pages/achievements/CloudDevOpsGitOp
 import TestAutomationAchievements from './pages/achievements/TestAutomation';
 import PerformanceAchievements from './pages/achievements/Performance';
 import AIAchievements from './pages/achievements/AI';
+import LeadershipAchievements from './pages/achievements/Leadership';
 
 // wrapper to scroll to top on route change
 const ScrollToTop = () => {
@@ -41,6 +42,7 @@ function App() {
                     <Route path="achievements/test-automation" element={<TestAutomationAchievements />} />
                     <Route path="achievements/performance" element={<PerformanceAchievements />} />
                     <Route path="achievements/ai" element={<AIAchievements />} />
+                    <Route path="achievements/leadership" element={<LeadershipAchievements />} />
                 </Route>
             </Routes>
         </Router>

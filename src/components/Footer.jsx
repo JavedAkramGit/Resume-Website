@@ -41,6 +41,7 @@ const Footer = () => {
                             <li><a href="/achievements/cloud" className="hover:text-white transition-colors">Cloud Engineering</a></li>
                             <li><a href="/achievements/devops" className="hover:text-white transition-colors">DevOps & CI/CD</a></li>
                             <li><a href="/achievements/ai" className="hover:text-white transition-colors">AI Systems</a></li>
+                            <li><a href="/achievements/leadership" className="hover:text-white transition-colors">Leadership</a></li>
                         </ul>
                     </div>
                 </div>

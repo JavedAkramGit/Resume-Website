@@ -81,7 +81,8 @@
             "Implemented DevOps governance standards to ensure consistency, auditability, and repeatability across pipelines.",
             "Integrated security, quality, and operational checks directly into delivery workflows.",
             "Collaborated with cloud, security, and development teams to embed DevOps best practices across the organization.",
-            "Improved delivery reliability and reduced deployment-related failures through standardized pipelines and automation."
+            "Improved delivery reliability and reduced deployment-related failures through standardized pipelines and automation.",
+            "Architected fully automated CI/CD multi-staging multi-repo pipelines using GitLab for running cross-browser, parallel, containerized test suites on in-house HRDF runners (1HRDF, CGP_Irshad, Jadarat, NLO etc)."
         ],
         "cloud_devops_gitops": [
             "Designed and implemented a GitOps-based delivery platform using Alibaba Cloud ACK, GitLab repositories, GitLab Container Registry, and ArgoCD.",
@@ -102,7 +103,10 @@
             "Reduced flaky test failures by approximately 70% through improved synchronization, retries, and environment stabilization.",
             "Led framework migrations, upgrades, and dependency patching to maintain stability and security.",
             "Established automation coding standards, governance models, and review processes across internal and vendor teams.",
-            "Improved overall quality confidence and release predictability across enterprise programs."
+            "Improved overall quality confidence and release predictability across enterprise programs.",
+            "Designed and led the development of advanced Selenium and Playwright automation frameworks using Java/Python/JS/TypeScript, TestNG/JUnit5, Cucumber, Maven/Gradle.",
+            "Implemented nested/Multi-threading container patterns and POM architecture, including technology migration with server caching, stored procedures, and private network communication protocols.",
+            "Enabled stable, scalable execution using Remote Grid Infrastructure, Docker Compose, and Kubernetes."
         ],
         "performance": [
             "Designed and implemented enterprise-grade performance engineering platforms using k6, Prometheus, and Grafana.",
@@ -113,7 +117,16 @@
             "Improved application response latency by up to 35% through early detection and remediation of performance issues.",
             "Reduced Mean Time to Recovery (MTTR) by approximately 30% through improved observability and monitoring visibility.",
             "Supported capacity planning and scalability forecasting using historical performance trend analysis.",
-            "Increased leadership confidence in system scalability and reliability through data-driven performance insights."
+            "Increased leadership confidence in system scalability and reliability through data-driven performance insights.",
+            "Led vendor teams to orchestrate end-to-end performance engineering initiatives at an organizational scale.",
+            "Designed synthetic monitoring strategies covering latency, RPS, VUs, error rates, and saturation metrics."
+        ],
+        "leadership": [
+            "Managed and guided vendor engineering teams across automation, performance, and DevOps tracks.",
+            "Established best practices, coding standards, and governance processes across QA teams.",
+            "Provided architectural guidance for multi-agent systems, k6 scenarios, and distributed test frameworks.",
+            "Contributed directly to improving delivery timelines, reducing flakiness, and increasing quality confidence for major releases.",
+            "Delivered measurable impact: reducing regression time by 93%, cutting CI/CD duration by 70%, lowering flaky tests by 70%, increasing capacity by 3×, improving latency by up to 35%, reducing MTTR by 30%, and improving vendor productivity by 30%."
         ],
         "ai": [
             "Designed and implemented an AI-driven Executive Decision Support System to assist HRDF leadership in optimizing national training programs.",
