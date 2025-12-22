@@ -1,0 +1,11 @@
+DevOps & CI/CD Engineering Achievements
+
+• Architected fully automated, multi-stage, multi-repository CI/CD pipelines using GitLab CI for enterprise platforms.
+• Designed reusable pipeline templates supporting commit-level, merge-request, post-deploy, scheduled, and on-demand executions.
+• Enabled parallel and containerized workload execution across multiple enterprise programs using shared and dedicated GitLab runners.
+• Reduced overall CI/CD pipeline execution time by up to 70% through optimized pipeline design, parallelization, and caching strategies.
+• Automated artifact lifecycle management including build outputs, logs, execution traces, and operational reports.
+• Implemented DevOps governance standards to ensure consistency, auditability, and repeatability across pipelines.
+• Integrated security, quality, and operational checks directly into delivery workflows.
+• Collaborated with cloud, security, and development teams to embed DevOps best practices across the organization.
+• Improved delivery reliability and reduced deployment-related failures through standardized pipelines and automation.

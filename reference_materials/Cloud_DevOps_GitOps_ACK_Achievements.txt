@@ -1,0 +1,10 @@
+Cloud DevOps & GitOps Platform Engineering (ACK + GitLab + ArgoCD)
+
+• Designed and implemented a GitOps-based delivery platform using Alibaba Cloud ACK, GitLab repositories, GitLab Container Registry, and ArgoCD.
+• Established separation of concerns between application repositories and GitOps infrastructure repositories to improve governance and auditability.
+• Implemented automated pipelines to build, tag, and push container images while programmatically updating GitOps manifests.
+• Enabled declarative, version-controlled Kubernetes deployments with automated synchronization and rollback capabilities.
+• Integrated Kubernetes secrets and registry authentication for secure image pulls within ACK clusters.
+• Reduced deployment errors by approximately 60% through GitOps-based consistency and state reconciliation.
+• Improved deployment traceability and audit readiness by maintaining full version history of infrastructure and application state.
+• Reduced environment recovery time and deployment-related incidents through automated rollback and reconciliation.

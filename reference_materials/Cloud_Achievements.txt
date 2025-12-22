@@ -1,0 +1,12 @@
+Cloud Engineering & Infrastructure Achievements
+
+• Designed and implemented cloud-native infrastructure platforms using Docker and Kubernetes to support scalable engineering workloads.
+• Architected Kubernetes-based execution platforms on Alibaba Cloud ACK with secure internal networking and namespace isolation.
+• Implemented Kubernetes autoscaling strategies using KEDA driven by real-time Prometheus metrics to optimize infrastructure utilization.
+• Increased infrastructure execution capacity by approximately 3× while maintaining platform stability and controlled cloud costs.
+• Built Terraform-based automation for Alibaba Cloud to provision ECS, VPC, Security Groups, RAM roles, OSS, and ACK prerequisites using CLI-only workflows.
+• Implemented ephemeral, TTL-based infrastructure provisioning for demos and experimentation, reducing idle cloud resource costs by approximately 40%.
+• Designed secure cloud networking models including private container registries, internal-only services, secrets management, and environment isolation.
+• Enabled environment-agnostic infrastructure deployments across dev, SIT, UAT, and production environments.
+• Ensured cloud platforms complied with enterprise security, governance, and regulatory requirements in government environments.
+• Provided architectural guidance on cloud resilience, fault tolerance, and high availability.

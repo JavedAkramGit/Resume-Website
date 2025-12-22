@@ -1,0 +1,129 @@
+{
+    "profile": {
+        "name": "Javed Akram",
+        "title": "Cloud, DevOps & QA Architect",
+        "location": "Riyadh, Saudi Arabia",
+        "email": "javed.akram.qau@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/javeed-akram-istqb-cka-aws-ab104a7a",
+        "summary": "Accomplished Cloud & DevOps Architect with extensive experience in designing and implementing scalable, secure, and resilient infrastructure. Expert in AWS, Alibaba Cloud, Kubernetes, and GitOps, with a strong background in Test Automation and Performance Engineering. Proven track record of optimizing costs, improving deployment frequency, and enhancing system reliability for enterprise-grade applications."
+    },
+    "experience": [
+        {
+            "id": 1,
+            "role": "Cloud & DevOps Architect",
+            "company": "Confidential (Government Side)",
+            "period": "2021 - Present",
+            "description": "Leading cloud infrastructure and DevOps transformation initiatives."
+        },
+        {
+            "id": 2,
+            "role": "Senior QA Automation Engineer",
+            "company": "Previous Company",
+            "period": "2018 - 2021",
+            "description": "Designed enterprise test automation frameworks."
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "degree": "Master of Computer Science",
+            "school": "Quaid-i-Azam University",
+            "year": "2014"
+        }
+    ],
+    "certifications": [
+        "Certified Kubernetes Administrator (CKA)",
+        "AWS Certified Solutions Architect – Associate",
+        "ISTQB Certified Tester",
+        "HashiCorp Certified: Terraform Associate"
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Government Cloud Migration",
+            "description": "Led the migration of critical services to Alibaba Cloud using ACK and Terraform.",
+            "tech": [
+                "Alibaba Cloud",
+                "Kubernetes",
+                "Terraform"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Enterprise DevOps Platform",
+            "description": "Built a unified CI/CD platform reducing deployment times by 70%.",
+            "tech": [
+                "GitLab CI",
+                "Docker",
+                "Python"
+            ]
+        }
+    ],
+    "achievements": {
+        "cloud": [
+            "Designed and implemented cloud-native infrastructure platforms using Docker and Kubernetes to support scalable engineering workloads.",
+            "Architected Kubernetes-based execution platforms on Alibaba Cloud ACK with secure internal networking and namespace isolation.",
+            "Implemented Kubernetes autoscaling strategies using KEDA driven by real-time Prometheus metrics to optimize infrastructure utilization.",
+            "Increased infrastructure execution capacity by approximately 3× while maintaining platform stability and controlled cloud costs.",
+            "Built Terraform-based automation for Alibaba Cloud to provision ECS, VPC, Security Groups, RAM roles, OSS, and ACK prerequisites using CLI-only workflows.",
+            "Implemented ephemeral, TTL-based infrastructure provisioning for demos and experimentation, reducing idle cloud resource costs by approximately 40%.",
+            "Designed secure cloud networking models including private container registries, internal-only services, secrets management, and environment isolation.",
+            "Enabled environment-agnostic infrastructure deployments across dev, SIT, UAT, and production environments.",
+            "Ensured cloud platforms complied with enterprise security, governance, and regulatory requirements in government environments.",
+            "Provided architectural guidance on cloud resilience, fault tolerance, and high availability."
+        ],
+        "devops": [
+            "Architected fully automated, multi-stage, multi-repository CI/CD pipelines using GitLab CI for enterprise platforms.",
+            "Designed reusable pipeline templates supporting commit-level, merge-request, post-deploy, scheduled, and on-demand executions.",
+            "Enabled parallel and containerized workload execution across multiple enterprise programs using shared and dedicated GitLab runners.",
+            "Reduced overall CI/CD pipeline execution time by up to 70% through optimized pipeline design, parallelization, and caching strategies.",
+            "Automated artifact lifecycle management including build outputs, logs, execution traces, and operational reports.",
+            "Implemented DevOps governance standards to ensure consistency, auditability, and repeatability across pipelines.",
+            "Integrated security, quality, and operational checks directly into delivery workflows.",
+            "Collaborated with cloud, security, and development teams to embed DevOps best practices across the organization.",
+            "Improved delivery reliability and reduced deployment-related failures through standardized pipelines and automation."
+        ],
+        "cloud_devops_gitops": [
+            "Designed and implemented a GitOps-based delivery platform using Alibaba Cloud ACK, GitLab repositories, GitLab Container Registry, and ArgoCD.",
+            "Established separation of concerns between application repositories and GitOps infrastructure repositories to improve governance and auditability.",
+            "Implemented automated pipelines to build, tag, and push container images while programmatically updating GitOps manifests.",
+            "Enabled declarative, version-controlled Kubernetes deployments with automated synchronization and rollback capabilities.",
+            "Integrated Kubernetes secrets and registry authentication for secure image pulls within ACK clusters.",
+            "Reduced deployment errors by approximately 60% through GitOps-based consistency and state reconciliation.",
+            "Improved deployment traceability and audit readiness by maintaining full version history of infrastructure and application state.",
+            "Reduced environment recovery time and deployment-related incidents through automated rollback and reconciliation."
+        ],
+        "test_automation": [
+            "Designed and led the development of enterprise-grade test automation frameworks using Selenium and Playwright across Java, Python, JavaScript, and TypeScript ecosystems.",
+            "Implemented robust framework architectures using Page Object Model (POM), modular design, reusable components, and multi-threaded execution.",
+            "Enabled large-scale parallel test execution, reducing regression execution time by approximately 93%.",
+            "Built unified test automation frameworks covering web UI and API validation.",
+            "Integrated advanced reporting solutions with custom branding, dashboards, hooks, and leadership-friendly visibility.",
+            "Reduced flaky test failures by approximately 70% through improved synchronization, retries, and environment stabilization.",
+            "Led framework migrations, upgrades, and dependency patching to maintain stability and security.",
+            "Established automation coding standards, governance models, and review processes across internal and vendor teams.",
+            "Improved overall quality confidence and release predictability across enterprise programs."
+        ],
+        "performance": [
+            "Designed and implemented enterprise-grade performance engineering platforms using k6, Prometheus, and Grafana.",
+            "Built performance test suites covering load, stress, spike, endurance, and saturation testing scenarios.",
+            "Designed custom Grafana dashboards visualizing latency, throughput, error rates, RPS, VUs, p95/p99 response times, and resource saturation metrics.",
+            "Enabled performance testing execution in both persistent VM-based observability environments and CI/CD pipeline-driven executions.",
+            "Identified scalability bottlenecks and performance risks prior to production release.",
+            "Improved application response latency by up to 35% through early detection and remediation of performance issues.",
+            "Reduced Mean Time to Recovery (MTTR) by approximately 30% through improved observability and monitoring visibility.",
+            "Supported capacity planning and scalability forecasting using historical performance trend analysis.",
+            "Increased leadership confidence in system scalability and reliability through data-driven performance insights."
+        ],
+        "ai": [
+            "Designed and implemented an AI-driven Executive Decision Support System to assist HRDF leadership in optimizing national training programs.",
+            "Built AI-based decision logic to analyze training utilization, demand patterns, effectiveness indicators, and outcome metrics.",
+            "Enabled leadership to identify underutilized, overfunded, or low-impact training programs and redirect investment to high-impact initiatives.",
+            "Developed scenario-based decision models to simulate demand surges, capacity constraints, and budget inefficiencies.",
+            "Translated complex program and operational data into executive-friendly insights aligned with policy and organizational objectives.",
+            "Demonstrated potential to improve training ROI and optimize allocation of multi-million-riyal training budgets.",
+            "Reduced manual analysis and reporting effort by approximately 50%, enabling faster executive decision cycles.",
+            "Positioned AI as a strategic advisory capability for workforce planning and policy decisions."
+        ]
+    }
+}

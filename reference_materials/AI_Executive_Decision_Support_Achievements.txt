@@ -1,0 +1,10 @@
+AI Executive Decision Support – HRDF Training Programs
+
+• Designed and implemented an AI-driven Executive Decision Support System to assist HRDF leadership in optimizing national training programs.
+• Built AI-based decision logic to analyze training utilization, demand patterns, effectiveness indicators, and outcome metrics.
+• Enabled leadership to identify underutilized, overfunded, or low-impact training programs and redirect investment to high-impact initiatives.
+• Developed scenario-based decision models to simulate demand surges, capacity constraints, and budget inefficiencies.
+• Translated complex program and operational data into executive-friendly insights aligned with policy and organizational objectives.
+• Demonstrated potential to improve training ROI and optimize allocation of multi-million-riyal training budgets.
+• Reduced manual analysis and reporting effort by approximately 50%, enabling faster executive decision cycles.
+• Positioned AI as a strategic advisory capability for workforce planning and policy decisions.

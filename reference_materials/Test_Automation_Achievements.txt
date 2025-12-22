@@ -1,0 +1,11 @@
+Test Automation & Quality Engineering Achievements
+
+• Designed and led the development of enterprise-grade test automation frameworks using Selenium and Playwright across Java, Python, JavaScript, and TypeScript ecosystems.
+• Implemented robust framework architectures using Page Object Model (POM), modular design, reusable components, and multi-threaded execution.
+• Enabled large-scale parallel test execution, reducing regression execution time by approximately 93%.
+• Built unified test automation frameworks covering web UI and API validation.
+• Integrated advanced reporting solutions with custom branding, dashboards, hooks, and leadership-friendly visibility.
+• Reduced flaky test failures by approximately 70% through improved synchronization, retries, and environment stabilization.
+• Led framework migrations, upgrades, and dependency patching to maintain stability and security.
+• Established automation coding standards, governance models, and review processes across internal and vendor teams.
+• Improved overall quality confidence and release predictability across enterprise programs.

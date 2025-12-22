@@ -1,0 +1,11 @@
+Performance Engineering & Observability Achievements
+
+• Designed and implemented enterprise-grade performance engineering platforms using k6, Prometheus, and Grafana.
+• Built performance test suites covering load, stress, spike, endurance, and saturation testing scenarios.
+• Designed custom Grafana dashboards visualizing latency, throughput, error rates, RPS, VUs, p95/p99 response times, and resource saturation metrics.
+• Enabled performance testing execution in both persistent VM-based observability environments and CI/CD pipeline-driven executions.
+• Identified scalability bottlenecks and performance risks prior to production release.
+• Improved application response latency by up to 35% through early detection and remediation of performance issues.
+• Reduced Mean Time to Recovery (MTTR) by approximately 30% through improved observability and monitoring visibility.
+• Supported capacity planning and scalability forecasting using historical performance trend analysis.
+• Increased leadership confidence in system scalability and reliability through data-driven performance insights.

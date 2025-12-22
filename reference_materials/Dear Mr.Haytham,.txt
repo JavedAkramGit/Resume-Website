@@ -1,0 +1,41 @@
+Dear Mr.Haytham,
+
+I hope you are doing well. It’s my humble request that you review my current compensation based on the expanded responsibilities have been taken on and the significant contributions that were delivered over the past period.
+Over the last year, my role has grown far beyond the standard scope of Test Automation Lead / DevOps-QA Platform responsibilities. I’ve consistently designed complex automation systems and driven initiatives that improved our engineering productivity, platform stability, test efficiency, and system performance. Below are few of the highlighted accomplishments:
+
+Key Achievements & Contributions
+
+Test Automation & Quality Engineering
+Designed and led the development of advanced Selenium and Playwright automation frameworks using Java/Python/JS/TypeScript, TestNG/JUnit5, Cucumber, Maven/Gradle, nested /Multi-threading container patterns, and POM architecture, including Technology migration with server caching, storage procedures and private network communication protocols, patch updates. 
+
+Enabled stable, scalable execution using Remote Grid Infrastructure, Docker Compose, and Kubernetes.
+Delivered enterprise-grade parallel execution frameworks reducing regression time from hours to minutes.
+Integrated Hybrid Reporting Libraries with custom branding, dashboards, and hooks for enhanced traceability.
+Created unified automation frameworks that support web, API, and performance layers.
+
+DevOps & CI/CD Engineering
+Architected fully automated CI/CD multi-staging multi-repo pipelines using GitLab for running cross-browser, parallel, containerized test suites on in-house HRDF runners.( 1HRDF, CGP_Irshad , Jadarat, NLO etc ) 
+Integrated Docker-based Selenium Grid and Playwright environments within pipeline runners for consistent, reproducible execution and service virtualization.
+Implemented autoscaling for Selenium and Chrome pods using KEDA, optimizing test throughput and resource utilization.
+Automated test artifact management (Allure, Grafana reports, k6 results, logs, traces).
+
+Performance Engineering, Observability & SRE Practices
+Led vendor teams to orchestrate end-to-end performance engineering initiatives at an organizational scale.
+Built Prometheus and Grafana–based observability pipelines for performance metrics, alerting, and trend analysis.
+Designed synthetic monitoring, stress/load testing strategies, and dashboards covering latency, RPS, VUs, error rates, p95/p99, and saturation metrics.
+Enabled leadership visibility into system performance and scalability across environments.
+
+Leadership, Vendor Management & Cross-Team Impact
+Managed and guided vendor engineering teams across automation, performance, and DevOps tracks.
+Established best practices, coding standards, and governance processes across QA teams.
+Provided architectural guidance for multi-agent systems, k6 scenarios, and distributed test frameworks.
+Contributed directly to improving delivery timelines, reducing flakiness, and increasing quality confidence for major releases.
+Across automation, DevOps, and performance engineering, my contributions have delivered measurable impact such as reducing regression time by 93%, cutting CI/CD duration by 70%, lowering flaky tests by 70%, increasing capacity by 3×, improving latency by up to 35%, reducing MTTR by 30%, and improving vendor productivity by 30%. These optimizations collectively improved quality, speed, and engineering efficiency at an organization-wide level
+
+
+Based on the expanded scope of my responsibilities—including automation architecture, performance engineering, DevOps integration, vendor leadership, and contributing to organization-wide observability—I believe my current compensation no longer reflects the level of contribution and ownership brought.
+Considering industry benchmarks for similar roles in Saudi Arabia which are 35000+ and the value delivered, Please request a revision accordingly.
+Commitment will be ensured from my side in continuing to deliver high-impact work, for the Cloud and Devops Team, under your mentorship and to further strengthen our automation, DevOps, and performance engineering capabilities.
+
+
+I would appreciate the opportunity to discuss this further at your convenience. Thank you for taking the time to consider my request and for your continuous support.
