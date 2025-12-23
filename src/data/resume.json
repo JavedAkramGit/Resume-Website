@@ -3,7 +3,7 @@
         "name": "Javed Akram",
         "title": "Cloud, DevOps & QA Architect",
         "location": "Riyadh, Saudi Arabia",
-        "email": "javed.akram.qau@gmail.com",
+        "email": "javedakramoffl@gmail.com",
         "linkedin": "https://www.linkedin.com/in/javeed-akram-istqb-cka-aws-ab104a7a",
         "summary": "Accomplished Cloud & DevOps Architect with extensive experience in designing and implementing scalable, secure, and resilient infrastructure. Expert in AWS, Alibaba Cloud, Kubernetes, and GitOps, with a strong background in Test Automation and Performance Engineering. Proven track record of optimizing costs, improving deployment frequency, and enhancing system reliability for enterprise-grade applications."
     },
@@ -21,14 +21,62 @@
             "company": "Previous Company",
             "period": "2018 - 2021",
             "description": "Designed enterprise test automation frameworks."
+        },
+        {
+            "id": 3,
+            "role": "QA Automation Engineer (RPA Focus)",
+            "company": "Fodex",
+            "period": "May 2022 - Feb 2023",
+            "description": "Specialized in robotic process automation and quality assurance."
+        },
+        {
+            "id": 4,
+            "role": "Quality Assurance Specialist",
+            "company": "UXBERT Labs",
+            "period": "May 2020 - Oct 2022",
+            "description": "Ensured software quality and user experience standards."
+        },
+        {
+            "id": 5,
+            "role": "Technical Event Supervisor",
+            "company": "Freelance",
+            "period": "May 2022 - Sep 2022",
+            "description": "Supervised technical aspects of events."
+        },
+        {
+            "id": 6,
+            "role": "Full-stack Developer",
+            "company": "Self-Employed (Past time)",
+            "period": "Apr 2022 - May 2022",
+            "description": "Developed full-stack web applications."
+        },
+        {
+            "id": 7,
+            "role": "Software Specialist",
+            "company": "Yusuf Bin Ahmed Kanoo Company Limited",
+            "period": "Apr 2016 - Apr 2020",
+            "description": "Managed software solutions and technical support."
+        },
+        {
+            "id": 8,
+            "role": "Quality Assurance Automation Engineer",
+            "company": "Accenture",
+            "period": "Sep 2014 - Feb 2017",
+            "description": "Implemented automated testing solutions for enterprise clients."
         }
     ],
     "education": [
         {
             "id": 1,
-            "degree": "Master of Computer Science",
-            "school": "Quaid-i-Azam University",
-            "year": "2014"
+            "degree": "Masters, Cloud and DevOps Management",
+            "school": "IU International University of Applied Sciences",
+            "year": "Mar 2023 - Mar 2025"
+        },
+        {
+            "id": 2,
+            "degree": "Bachelor of Engineering (BE), Electrical, Electronics and Communications Engineering",
+            "school": "Anna University Chennai",
+            "year": "Aug 2010 - May 2014"
         }
     ],
     "certifications": [
@@ -56,6 +104,35 @@
                 "GitLab CI",
                 "Docker",
                 "Python"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Cloud Security Posture Management (CSPM-Lite) Platform",
+            "description": "A lightweight platform offering automated security controls and rapid assessment.",
+            "details": [
+                "10+ automated security controls",
+                "80% reduction in manual review effort",
+                "<30s security posture assessment runtime",
+                "Zero-risk, read-only execution model"
+            ],
+            "tech": [
+                "Cloud Security",
+                "Automation"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "AI-Driven Executive Decision Intelligence Platform (GovTech)",
+            "description": "AI-driven insights for faster executive decision-making and optimization.",
+            "details": [
+                "70–90% faster executive decision-making with AI-driven insights that improved training program effectiveness and employment outcomes by up to 1–2%",
+                "20–30% reduction in leadership reporting effort, enabling proactive governance, early risk detection, and data-driven regional optimization"
+            ],
+            "tech": [
+                "AI/ML",
+                "Data Analytics",
+                "GovTech"
             ]
         }
     ],

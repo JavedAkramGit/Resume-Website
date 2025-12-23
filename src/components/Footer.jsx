@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Gitlab, Linkedin, Mail } from 'lucide-react';
 import resumeData from '../data/resume.json';
 
 const Footer = () => {
@@ -27,9 +27,9 @@ const Footer = () => {
                                 <Mail size={20} />
                                 <span>{resumeData.profile.email}</span>
                             </a>
-                            <a href="#" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-                                <Github size={20} />
-                                <span>GitHub</span>
+                            <a href="https://gitlab.com/gitlab7370308" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                                <Gitlab size={20} />
+                                <span>GitLab</span>
                             </a>
                         </div>
                     </div>

@@ -19,7 +19,16 @@ const Projects = () => {
                             title={project.title}
                             tags={project.tech}
                         >
-                            {project.description}
+                            <div className="space-y-4">
+                                <p>{project.description}</p>
+                                {project.details && (
+                                    <ul className="list-disc pl-4 space-y-2">
+                                        {project.details.map((detail, idx) => (
+                                            <li key={idx}>{detail}</li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
                         </Card>
                     ))}
                 </div>
