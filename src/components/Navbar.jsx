@@ -37,7 +37,7 @@ const Navbar = () => {
                             <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-2 rounded-lg shadow-lg">
                                 <Code size={24} strokeWidth={2.5} />
                             </div>
-                            <span className="font-bold text-xl tracking-tight text-slate-800">Javed Akram</span>
+                            <span className="font-bold text-xl tracking-tight text-slate-800">Javeed Akram</span>
                         </Link>
                     </div>
 

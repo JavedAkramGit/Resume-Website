@@ -1,7 +1,7 @@
 # Modern Resume & Portfolio Website
 
 A responsive, SEO-optimized resume website built with React, Vite, and Tailwind CSS.
-Designed for Javed Akram - Cloud, DevOps & QA Architect.
+Designed for Javeed Akram - Cloud, DevOps & QA Architect.
 
 ## Project Structure
 

@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-                    <p>© {new Date().getFullYear()} Javed Akram. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Javeed Akram. All rights reserved.</p>
                     <p>Built with React, Vite & Tailwind CSS</p>
                 </div>
             </div>
