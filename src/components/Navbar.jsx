@@ -37,7 +37,17 @@ const Navbar = () => {
                             <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-2 rounded-lg shadow-lg">
                                 <Code size={24} strokeWidth={2.5} />
                             </div>
-                            <span className="font-bold text-xl tracking-tight text-slate-800">Javeed Akram</span>
+                            <span className="font-bold text-xl tracking-tight text-slate-800">
+                                {(() => {
+                                    const path = location.pathname;
+                                    if (path === '/') return 'Build';
+                                    if (path === '/experience') return 'Innovate';
+                                    if (path === '/projects') return 'Automate';
+                                    if (path.startsWith('/achievements')) return 'Scale';
+                                    if (path === '/education') return 'Deploy';
+                                    return 'Build';
+                                })()}
+                            </span>
                         </Link>
                     </div>
 
@@ -49,10 +59,16 @@ const Navbar = () => {
 
                         {/* Dropdown for Achievements */}
                         <div className="relative group">
-                            <button className="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-blue-600 inline-flex items-center gap-1 transition-colors">
+                            <Link
+                                to="/achievements"
+                                className={`px-3 py-2 rounded-md text-sm font-medium inline-flex items-center gap-1 transition-colors ${location.pathname.startsWith('/achievements')
+                                        ? 'bg-blue-600 text-white shadow-md'
+                                        : 'text-slate-600 hover:bg-slate-100 hover:text-blue-600'
+                                    }`}
+                            >
                                 Achievements
                                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
-                            </button>
+                            </Link>
 
                             <div className="absolute right-0 w-64 mt-2 origin-top-right bg-white border border-slate-100 divide-y divide-slate-100 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform">
                                 <div className="py-1">

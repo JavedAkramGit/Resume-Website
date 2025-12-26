@@ -13,6 +13,8 @@ import PerformanceAchievements from './pages/achievements/Performance';
 import AIAchievements from './pages/achievements/AI';
 import LeadershipAchievements from './pages/achievements/Leadership';
 
+import Achievements from './pages/Achievements';
+
 // wrapper to scroll to top on route change
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -34,6 +36,7 @@ function App() {
                     <Route path="experience" element={<Experience />} />
                     <Route path="education" element={<Education />} />
                     <Route path="projects" element={<Projects />} />
+                    <Route path="achievements" element={<Achievements />} />
 
                     {/* Achievement Routes */}
                     <Route path="achievements/cloud" element={<CloudAchievements />} />

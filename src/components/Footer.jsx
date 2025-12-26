@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Brand */}
                     <div className="space-y-4">
-                        <h3 className="text-2xl font-bold text-white tracking-tight">{resumeData.profile.name}</h3>
+                        <h3 className="text-lg font-semibold text-white tracking-tight">Vision</h3>
                         <p className="text-slate-400 max-w-sm">
                             Building the future of cloud infrastructure and DevOps automation.
                         </p>
@@ -47,8 +47,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-                    <p>© {new Date().getFullYear()} Javeed Akram. All rights reserved.</p>
-                    <p>Built with React, Vite & Tailwind CSS</p>
+                    <p>© {new Date().getFullYear()} All rights reserved.</p>
                 </div>
             </div>
         </footer>
