@@ -75,11 +75,11 @@ const Achievements = () => {
                                         <div className={`p-2 rounded-lg bg-white/5 border border-white/10 group-hover:border-aura-cyan/30 transition-all shadow-lg`}>
                                             <item.icon className={`h-5 w-5 ${item.color}`} />
                                         </div>
-                                        <h3 className="text-lg font-bold text-slate-200 group-hover:text-aura-cyan transition-colors tracking-tight">
+                                        <h3 className="text-lg font-bold text-slate-900 group-hover:text-aura-cyan group-hover:drop-shadow-[0_0_8px_rgba(0,184,204,0.5)] transition-all duration-300 tracking-tight">
                                             {item.title}
                                         </h3>
                                     </div>
-                                    <p className="text-slate-400 leading-relaxed text-sm">
+                                    <p className="text-slate-700 leading-relaxed text-sm group-hover:text-slate-900 transition-colors duration-300">
                                         {item.description}
                                     </p>
                                 </Card>

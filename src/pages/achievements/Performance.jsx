@@ -16,7 +16,7 @@ const PerformanceAchievements = () => {
                     <div className="w-16 h-16 bg-rose-500/10 border border-rose-500/20 backdrop-blur rounded-2xl flex items-center justify-center mx-auto mb-6 text-rose-400 shadow-[0_0_15px_rgba(251,113,133,0.3)]">
                         <Activity size={32} />
                     </div>
-                    <h1 className="text-3xl md:text-5xl font-bold text-slate-200 mb-4 font-orbitron tracking-wide neon-text">Performance Engineering</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-wide drop-shadow-[0_2px_8px_rgba(0,184,204,0.3)]">Performance Engineering</h1>
                     <p className="text-slate-400 max-w-2xl mx-auto font-mono text-sm">Load testing, observability, and system optimization.</p>
                 </div>
             </div>

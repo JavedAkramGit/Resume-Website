@@ -16,7 +16,7 @@ const LeadershipAchievements = () => {
                     <div className="w-16 h-16 bg-teal-500/10 border border-teal-500/20 backdrop-blur rounded-2xl flex items-center justify-center mx-auto mb-6 text-teal-400 shadow-[0_0_15px_rgba(45,212,191,0.3)]">
                         <Users size={32} />
                     </div>
-                    <h1 className="text-3xl md:text-5xl font-bold text-slate-200 mb-4 font-orbitron tracking-wide neon-text">Leadership & Vendor Management</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-wide drop-shadow-[0_2px_8px_rgba(0,184,204,0.3)]">Leadership & Vendor Management</h1>
                     <p className="text-slate-400 max-w-2xl mx-auto font-mono text-sm">Cross-functional team leadership, governance, and organizational impact.</p>
                 </div>
             </div>

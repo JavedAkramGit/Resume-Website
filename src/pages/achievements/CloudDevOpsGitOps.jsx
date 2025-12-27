@@ -16,7 +16,7 @@ const CloudDevOpsGitOpsAchievements = () => {
                     <div className="w-16 h-16 bg-neon-purple/10 border border-neon-purple/20 backdrop-blur rounded-2xl flex items-center justify-center mx-auto mb-6 text-neon-purple shadow-[0_0_15px_rgba(168,85,247,0.3)]">
                         <Rocket size={32} />
                     </div>
-                    <h1 className="text-3xl md:text-5xl font-bold text-slate-200 mb-4 font-orbitron tracking-wide neon-text">GitOps Platforms</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-wide drop-shadow-[0_2px_8px_rgba(0,184,204,0.3)]">GitOps Platforms</h1>
                     <p className="text-slate-400 max-w-2xl mx-auto font-mono text-sm">Declarative infrastructure and Kubernetes delivery with ArgoCD.</p>
                 </div>
             </div>
