@@ -4,50 +4,60 @@ import resumeData from '../data/resume.json';
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-900 text-slate-300 py-12">
+        <footer className="bg-[#05070D] text-slate-400 py-20 border-t border-white/5 relative z-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     {/* Brand */}
-                    <div className="space-y-4">
-                        <h3 className="text-lg font-semibold text-white tracking-tight">Vision</h3>
-                        <p className="text-slate-400 max-w-sm">
-                            Building the future of cloud infrastructure and DevOps automation.
+                    <div className="space-y-6">
+                        <div className="flex flex-col">
+                            <h3 className="text-xl font-bold text-slate-200 tracking-widest uppercase">VISION</h3>
+                            <div className="w-10 h-1 bg-aura-cyan mt-2 rounded-full"></div>
+                        </div>
+                        <p className="text-slate-500 max-w-sm leading-relaxed text-sm">
+                            Architecting resilient, high-scale digital ecosystems through
+                            advanced cloud infrastructure and seamless automation pipelines.
                         </p>
                     </div>
 
-                    {/* Links */}
+                    {/* Connect */}
                     <div>
-                        <h4 className="text-lg font-semibold text-white mb-4">Connect</h4>
-                        <div className="space-y-3">
-                            <a href={resumeData.profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-                                <Linkedin size={20} />
-                                <span>LinkedIn</span>
+                        <h4 className="text-lg font-bold text-slate-200 mb-6 tracking-tight uppercase">CONNECT</h4>
+                        <div className="space-y-4">
+                            <a href={resumeData.profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-aura-cyan transition-all group w-fit">
+                                <div className="p-2 bg-white/5 rounded-lg group-hover:bg-aura-cyan/10 group-hover:text-aura-cyan transition-all border border-transparent group-hover:border-aura-cyan/20">
+                                    <Linkedin size={18} />
+                                </div>
+                                <span className="font-medium text-sm">Professional Profile</span>
                             </a>
-                            <a href={`mailto:${resumeData.profile.email}`} className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-                                <Mail size={20} />
-                                <span>{resumeData.profile.email}</span>
+                            <a href={`mailto:${resumeData.profile.email}`} className="flex items-center gap-3 hover:text-aura-purple transition-all group w-fit">
+                                <div className="p-2 bg-white/5 rounded-lg group-hover:bg-aura-purple/10 group-hover:text-aura-purple transition-all border border-transparent group-hover:border-aura-purple/20">
+                                    <Mail size={18} />
+                                </div>
+                                <span className="font-medium text-sm">{resumeData.profile.email}</span>
                             </a>
-                            <a href="https://gitlab.com/gitlab7370308" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-                                <Gitlab size={20} />
-                                <span>GitLab</span>
+                            <a href="https://gitlab.com/gitlab7370308" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-aura-magenta transition-all group w-fit">
+                                <div className="p-2 bg-white/5 rounded-lg group-hover:bg-aura-magenta/10 group-hover:text-aura-magenta transition-all border border-transparent group-hover:border-aura-magenta/20">
+                                    <Gitlab size={18} />
+                                </div>
+                                <span className="font-medium text-sm">Technical Works</span>
                             </a>
                         </div>
                     </div>
 
-                    {/* Quick Links */}
+                    {/* Domains */}
                     <div>
-                        <h4 className="text-lg font-semibold text-white mb-4">Portfolio</h4>
-                        <ul className="space-y-2 text-sm">
-                            <li><a href="/achievements/cloud" className="hover:text-white transition-colors">Cloud Engineering</a></li>
-                            <li><a href="/achievements/devops" className="hover:text-white transition-colors">DevOps & CI/CD</a></li>
-                            <li><a href="/achievements/ai" className="hover:text-white transition-colors">AI Systems</a></li>
-                            <li><a href="/achievements/leadership" className="hover:text-white transition-colors">Leadership</a></li>
+                        <h4 className="text-lg font-bold text-slate-200 mb-6 tracking-tight uppercase">DOMAINS</h4>
+                        <ul className="space-y-3 text-sm font-medium">
+                            <li><a href="/achievements/cloud" className="hover:text-aura-cyan transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-cyan opacity-50 group-hover:opacity-100 transition-opacity"></span>Cloud Engineering</a></li>
+                            <li><a href="/achievements/devops" className="hover:text-aura-purple transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-purple opacity-50 group-hover:opacity-100 transition-opacity"></span>DevOps & CI/CD</a></li>
+                            <li><a href="/achievements/ai" className="hover:text-aura-magenta transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-magenta opacity-50 group-hover:opacity-100 transition-opacity"></span>AI Infrastructure</a></li>
+                            <li><a href="/achievements/leadership" className="hover:text-aura-cyan transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-cyan opacity-50 group-hover:opacity-100 transition-opacity"></span>Technical Leadership</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-                    <p>© {new Date().getFullYear()} All rights reserved.</p>
+                <div className="border-t border-white/5 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center text-[11px] text-slate-700 font-mono uppercase tracking-widest font-bold">
+                    <p>© {new Date().getFullYear()} Javeed Akram. All rights reserved.</p>
                 </div>
             </div>
         </footer>

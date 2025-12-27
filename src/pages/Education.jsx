@@ -1,52 +1,51 @@
 import React from 'react';
 import Section from '../components/Section';
+import Card from '../components/Card';
 import resumeData from '../data/resume.json';
 import { Award, GraduationCap } from 'lucide-react';
 
 const Education = () => {
     return (
-        <div className="bg-slate-50 min-h-screen">
-            <div className="bg-slate-900 py-20 text-center">
-                <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Education & Certifications</h1>
-                <p className="text-slate-300 max-w-2xl mx-auto px-4">Academic background and professional qualifications.</p>
+        <div className="relative min-h-screen py-32 px-4 overflow-hidden">
+            {/* Background Effects */}
+            <div className="aura-blob w-[500px] h-[500px] bg-aura-magenta/5 bottom-0 right-0" />
+
+            <div className="max-w-4xl mx-auto relative z-10">
+                <Section
+                    title="EDUCATION"
+                    subtitle="Academic background and core specializations"
+                >
+                    <div className="space-y-8 mt-4">
+                        {resumeData.education.map((edu, index) => (
+                            <Card
+                                key={index}
+                                title={edu.degree}
+                                subtitle={`${edu.school || edu.institution} | ${edu.year || edu.period}`}
+                            >
+                                <p className="text-slate-400 leading-relaxed">{edu.description}</p>
+                            </Card>
+                        ))}
+                    </div>
+                </Section>
+
+                <Section
+                    title="CERTIFICATIONS"
+                    subtitle="Professional validation of technical expertise"
+                    className="mt-24"
+                >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                        {resumeData.certifications.map((cert, index) => (
+                            <Card
+                                key={index}
+                                title={typeof cert === 'string' ? cert : cert.name}
+                                subtitle={cert.issuer || "Professional Certification"}
+                            >
+                                {cert.date && <p className="text-xs text-aura-cyan font-mono opacity-60 uppercase tracking-widest">{cert.date}</p>}
+                            </Card>
+                        ))}
+                    </div>
+                </Section>
             </div>
-
-            <Section title="Certifications">
-                <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {resumeData.certifications.map((cert, index) => (
-                        <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start gap-4">
-                            <div className="bg-amber-50 p-3 rounded-lg text-amber-600">
-                                <Award size={24} />
-                            </div>
-                            <div>
-                                <h3 className="font-semibold text-slate-800 text-lg">{cert}</h3>
-                                <div className="text-slate-500 text-sm mt-1">Professional License</div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </Section>
-
-            <Section title="Education" className="bg-white">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    {resumeData.education.map((edu) => (
-                        <div key={edu.id} className="flex flex-col md:flex-row gap-4 md:items-center justify-between p-6 bg-slate-50 rounded-xl border border-slate-100">
-                            <div className="flex items-center gap-4">
-                                <div className="bg-blue-100 p-3 rounded-full text-blue-600">
-                                    <GraduationCap size={24} />
-                                </div>
-                                <div>
-                                    <h3 className="font-bold text-slate-900 text-lg">{edu.degree}</h3>
-                                    <div className="text-slate-600">{edu.school}</div>
-                                </div>
-                            </div>
-                            <div className="text-slate-500 font-medium bg-white px-4 py-1 rounded-full border border-slate-200 text-sm inline-block w-fit">
-                                {edu.year}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </Section>
         </div>
     );
 };

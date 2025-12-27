@@ -1,79 +1,131 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Cloud, Server, Shield, Brain } from 'lucide-react';
+import { Activity, Users } from 'lucide-react';
 import Section from '../components/Section';
+import Card from '../components/Card';
 import resumeData from '../data/resume.json';
-import { motion } from 'framer-motion';
 
 const Home = () => {
     return (
-        <>
-            {/* Hero Section */}
-            <div className="relative overflow-hidden bg-slate-900 text-white py-24 sm:py-32">
-                <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-                    <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
-                </div>
+        <div className="relative min-h-screen overflow-hidden">
+            {/* Background Effects */}
+            <div className="aura-blob w-[500px] h-[500px] bg-aura-cyan/10 -top-20 -left-20" />
+            <div className="aura-blob w-[400px] h-[400px] bg-aura-purple/5 bottom-1/4 -right-10" style={{ animationDelay: '2s' }} />
 
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="mx-auto max-w-2xl text-center">
-                        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6 bg-gradient-to-r from-blue-200 to-indigo-400 bg-clip-text text-transparent">
-                            {resumeData.profile.name}
+            {/* Terminal Scanlines Effect (Landing Page Only) */}
+            <div className="absolute inset-0 pointer-events-none opacity-[0.03] z-50 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%]" />
+
+            <div className="pt-32 pb-20 px-4 relative z-10 text-center">
+                <div className="max-w-7xl mx-auto">
+                    {/* Hero Section */}
+                    <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-black/40 border border-white/10 text-[11px] font-mono text-aura-cyan mb-12 shadow-[0_0_20px_rgba(0,230,255,0.1)]">
+                        <span className="flex h-2 w-2 rounded-full bg-aura-cyan animate-pulse"></span>
+                        <span className="opacity-70 font-mono tracking-tighter uppercase">system_node: operational</span>
+                        <span className="font-bold opacity-30">|</span>
+                        <span className="font-bold font-mono tracking-tighter">EST_02:30:11</span>
+                    </div>
+
+                    <div className="relative mb-12 group">
+                        <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter leading-[0.85] mb-4">
+                            <span className="text-slate-400 group-hover:text-aura-cyan transition-all duration-700 block group-hover:translate-x-2 group-hover:drop-shadow-[0_0_15px_rgba(0,184,204,0.4)]">ARCHITECTING</span>
+                            <span className="neon-text block">LIMITLESS</span>
+                            <span className="text-slate-400 group-hover:text-aura-purple transition-all duration-700 block group-hover:-translate-x-2 group-hover:drop-shadow-[0_0_15px_rgba(102,41,163,0.4)]">POSSIBILITIES</span>
                         </h1>
-                        <p className="text-lg leading-8 text-slate-300 mb-8 font-light">
-                            {resumeData.profile.title}
-                        </p>
-                        <p className="text-base leading-7 text-slate-400 mb-10 max-w-xl mx-auto">
-                            {resumeData.profile.summary}
-                        </p>
-                        <div className="flex items-center justify-center gap-x-6">
-                            <Link to="/achievements/cloud" className="rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all flex items-center gap-2">
-                                View Achievements <ArrowRight size={16} />
-                            </Link>
-                            <a href={resumeData.profile.linkedin} target="_blank" rel="noreferrer" className="text-sm font-semibold leading-6 text-white hover:text-blue-300">
-                                LinkedIn Profile <span aria-hidden="true">→</span>
-                            </a>
+                    </div>
+
+                    {/* Terminal Window Mockup */}
+                    <div className="max-w-3xl mx-auto mb-16 relative">
+                        <div className="absolute inset-0 bg-aura-cyan/5 blur-3xl rounded-full"></div>
+                        <div className="relative bg-[#0A0D14]/80 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden shadow-2xl">
+                            <div className="bg-white/5 px-4 py-2 flex items-center justify-between border-b border-white/10">
+                                <div className="flex gap-1.5">
+                                    <div className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></div>
+                                    <div className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></div>
+                                    <div className="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></div>
+                                </div>
+                                <div className="text-[10px] font-mono text-slate-500 uppercase tracking-widest">profile_summary.exe</div>
+                                <div className="w-10"></div>
+                            </div>
+                            <div className="p-6 text-left font-mono text-sm md:text-base">
+                                <div className="flex gap-3 mb-2">
+                                    <span className="text-aura-cyan">➜</span>
+                                    <span className="text-slate-200">cat vision.txt</span>
+                                </div>
+                                <div className="text-slate-400 mb-6 ml-6 border-l-2 border-white/5 pl-4 py-1 italic">
+                                    "Architecting resilient, high-scale digital ecosystems through
+                                    advanced infrastructure engineering and seamless automation."
+                                </div>
+                                <div className="flex gap-3 mb-2">
+                                    <span className="text-aura-purple">➜</span>
+                                    <span className="text-slate-200">ls ./expertise</span>
+                                </div>
+                                <div className="text-aura-cyan/70 ml-6 grid grid-cols-2 md:grid-cols-4 gap-2 text-xs uppercase tracking-tighter font-bold">
+                                    <span>[ CLOUD ]</span>
+                                    <span>[ DEVOPS ]</span>
+                                    <span>[ ARCH ]</span>
+                                    <span>[ SECURITY ]</span>
+                                </div>
+                                <div className="flex gap-3 mt-6">
+                                    <span className="text-aura-magenta animate-pulse tracking-tighter">[ SYSTEM_READY ] _</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-24">
+                        <Link to="/achievements/cloud" className="neon-button group font-mono text-xs tracking-[0.2em] uppercase">
+                            ./explore_solutions
+                        </Link>
+                        <a
+                            href="https://linkedin.com/in/mohamedjaveedakram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-8 py-3 rounded-lg border border-white/10 text-slate-200 font-bold hover:bg-white/5 transition-all flex items-center gap-2 group font-mono text-sm"
+                        >
+                            <Users size={16} className="text-aura-cyan group-hover:scale-110 transition-transform" />
+                            // CONNECT_SOCIAL
+                        </a>
+                    </div>
+
+                    {/* Feature Grid */}
+                    <Section title="SYSTEM MODULES" subtitle="Specialized infrastructure capabilities" className="mt-20">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <Card
+                                title="Cloud Architecture"
+                                subtitle="SCALABILITY"
+                                tags={['AWS', 'Alibaba', 'Azure']}
+                            >
+                                <p>Expertise in multi-cloud environments, designing high-availability and secure cloud-native architectures.</p>
+                            </Card>
+
+                            <Card
+                                title="DevOps & GitOps"
+                                subtitle="AUTOMATION"
+                                tags={['K8s', 'ArgoCD', 'CI/CD']}
+                            >
+                                <p>Building automated delivery pipelines and declarative workflows to accelerate software delivery.</p>
+                            </Card>
+
+                            <Card
+                                title="Quality Engineering"
+                                subtitle="RELIABILITY"
+                                tags={['Selenium', 'JMeter', 'QA Strategy']}
+                            >
+                                <p>Integrating enterprise-grade test automation and performance monitoring across the stack.</p>
+                            </Card>
+
+                            <Card
+                                title="AI Infrastructure"
+                                subtitle="INTELLIGENCE"
+                                tags={['Python', 'BERT', 'MLOps']}
+                            >
+                                <p>Developing AI-driven decision support systems and scalable infrastructure for model deployment.</p>
+                            </Card>
+                        </div>
+                    </Section>
                 </div>
             </div>
-
-            {/* Feature Grid */}
-            <Section title="Core Competencies" subtitle="Specialized expertise in modern infrastructure">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                        <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-4">
-                            <Cloud size={24} />
-                        </div>
-                        <h3 className="font-semibold text-lg text-slate-900 mb-2">Cloud Architecture</h3>
-                        <p className="text-slate-600 text-sm">Expertise in AWS & Alibaba Cloud, designing scalable and secure cloud-native environments.</p>
-                    </div>
-
-                    <div className="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                        <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 mb-4">
-                            <Server size={24} />
-                        </div>
-                        <h3 className="font-semibold text-lg text-slate-900 mb-2">DevOps & GitOps</h3>
-                        <p className="text-slate-600 text-sm">Building automated delivery pipelines with GitLab, ArgoCD, and Kubernetes.</p>
-                    </div>
-
-                    <div className="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                        <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-4">
-                            <Shield size={24} />
-                        </div>
-                        <h3 className="font-semibold text-lg text-slate-900 mb-2">Quality Engineering</h3>
-                        <p className="text-slate-600 text-sm">Advanced test automation strategies reducing regression time by 93%.</p>
-                    </div>
-
-                    <div className="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                        <div className="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-4">
-                            <Brain size={24} />
-                        </div>
-                        <h3 className="font-semibold text-lg text-slate-900 mb-2">AI Systems</h3>
-                        <p className="text-slate-600 text-sm">Designing AI-driven decision support systems for enterprise data analysis.</p>
-                    </div>
-                </div>
-            </Section>
-        </>
+        </div>
     );
 };
 

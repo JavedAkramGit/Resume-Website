@@ -5,34 +5,39 @@ import resumeData from '../data/resume.json';
 
 const Projects = () => {
     return (
-        <div className="bg-slate-50 min-h-screen">
-            <div className="bg-slate-900 py-20 text-center">
-                <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Featured Projects</h1>
-                <p className="text-slate-300 max-w-2xl mx-auto px-4">A selection of key technical initiatives and architectural designs.</p>
-            </div>
+        <div className="relative min-h-screen py-32 px-4 overflow-hidden">
+            {/* Background Effects */}
+            <div className="aura-blob w-[400px] h-[400px] bg-aura-purple/10 top-20 left-0" />
 
-            <Section>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {resumeData.projects.map((project) => (
-                        <Card
-                            key={project.id}
-                            title={project.title}
-                            tags={project.tech}
-                        >
-                            <div className="space-y-4">
-                                <p>{project.description}</p>
-                                {project.details && (
-                                    <ul className="list-disc pl-4 space-y-2">
-                                        {project.details.map((detail, idx) => (
-                                            <li key={idx}>{detail}</li>
+            <div className="max-w-6xl mx-auto relative z-10">
+                <Section
+                    title="PROJECTS"
+                    subtitle="Technical implementations and architectural solutions"
+                >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                        {resumeData.projects.map((project, index) => (
+                            <Card
+                                key={index}
+                                title={project.title || project.name}
+                                subtitle={project.role}
+                                tags={project.tech || project.technologies}
+                            >
+                                <p className="mb-6 leading-relaxed text-slate-400">{project.description}</p>
+                                {((project.details || project.highlights) && (
+                                    <ul className="space-y-3">
+                                        {(project.details || project.highlights).map((detail, idx) => (
+                                            <li key={idx} className="flex gap-2 text-sm text-slate-500 group/item">
+                                                <span className="text-aura-magenta flex-shrink-0">›</span>
+                                                <span className="group-hover:text-slate-300 transition-colors leading-relaxed">{detail}</span>
+                                            </li>
                                         ))}
                                     </ul>
-                                )}
-                            </div>
-                        </Card>
-                    ))}
-                </div>
-            </Section>
+                                ))}
+                            </Card>
+                        ))}
+                    </div>
+                </Section>
+            </div>
         </div>
     );
 };

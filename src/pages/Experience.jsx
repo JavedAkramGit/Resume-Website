@@ -1,46 +1,41 @@
 import React from 'react';
 import Section from '../components/Section';
+import Card from '../components/Card';
 import resumeData from '../data/resume.json';
 import { Briefcase } from 'lucide-react';
 
 const Experience = () => {
     return (
-        <div className="bg-slate-50 min-h-screen">
-            <div className="bg-slate-900 py-20 text-center">
-                <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Professional Experience</h1>
-                <p className="text-slate-300 max-w-2xl mx-auto px-4">A timeline of my professional journey and key roles.</p>
-            </div>
+        <div className="relative min-h-screen py-32 px-4 overflow-hidden">
+            {/* Background Background Effects */}
+            <div className="aura-blob w-[400px] h-[400px] bg-aura-cyan/10 top-20 right-0" />
 
-            <Section>
-                <div className="max-w-3xl mx-auto">
-                    <div className="relative border-l-2 border-slate-200 pl-8 space-y-12">
-                        {resumeData.experience.map((job) => (
-                            <div key={job.id} className="relative">
-                                {/* Dot */}
-                                <div className="absolute -left-[41px] top-0 bg-white border-4 border-blue-500 w-5 h-5 rounded-full"></div>
-
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                                    <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                                        <div>
-                                            <h3 className="text-xl font-bold text-slate-900">{job.role}</h3>
-                                            <div className="text-blue-600 font-medium flex items-center gap-2 mt-1">
-                                                <Briefcase size={16} />
-                                                {job.company}
-                                            </div>
-                                        </div>
-                                        <span className="mt-2 sm:mt-0 px-3 py-1 bg-slate-100 text-slate-600 text-sm font-medium rounded-full self-start">
-                                            {job.period}
-                                        </span>
-                                    </div>
-                                    <p className="text-slate-600 leading-relaxed">
-                                        {job.description}
-                                    </p>
-                                </div>
-                            </div>
+            <div className="max-w-4xl mx-auto relative z-10">
+                <Section
+                    title="EXPERIENCE"
+                    subtitle="Professional journey in engineering and architecture"
+                >
+                    <div className="space-y-8 mt-4">
+                        {resumeData.experience.map((exp, index) => (
+                            <Card
+                                key={index}
+                                title={exp.position || exp.role}
+                                subtitle={`${exp.company} | ${exp.period}`}
+                                tags={exp.technologies || exp.skills}
+                            >
+                                <ul className="space-y-3 mt-4">
+                                    {(exp.highlights || exp.points || []).map((highlight, hIndex) => (
+                                        <li key={hIndex} className="flex gap-3 text-slate-400 group/item">
+                                            <span className="text-aura-cyan flex-shrink-0 mt-1">▹</span>
+                                            <span className="group-hover:text-slate-200 transition-colors leading-relaxed">{highlight}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </Card>
                         ))}
                     </div>
-                </div>
-            </Section>
+                </Section>
+            </div>
         </div>
     );
 };

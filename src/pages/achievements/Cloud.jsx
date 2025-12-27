@@ -7,17 +7,17 @@ import { Link } from 'react-router-dom';
 
 const CloudAchievements = () => {
     return (
-        <div className="bg-slate-50 min-h-screen">
-            <div className="bg-gradient-to-r from-blue-900 to-slate-900 py-20 text-center relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 relative z-10">
-                    <Link to="/" className="absolute top-0 left-4 text-slate-400 hover:text-white flex items-center gap-2 text-sm font-medium transition-colors">
-                        <ArrowLeft size={16} /> Back to Home
+        <div className="min-h-screen pt-20">
+            <div className="relative overflow-hidden mb-12">
+                <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
+                    <Link to="/" className="absolute top-0 left-4 text-slate-400 hover:text-neon-cyan flex items-center gap-2 text-sm font-mono transition-colors">
+                        <ArrowLeft size={16} /> // BACK
                     </Link>
-                    <div className="w-16 h-16 bg-blue-500/20 backdrop-blur rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-300">
+                    <div className="w-16 h-16 bg-neon-cyan/10 border border-neon-cyan/20 backdrop-blur rounded-2xl flex items-center justify-center mx-auto mb-6 text-neon-cyan shadow-[0_0_15px_rgba(34,211,238,0.3)]">
                         <Cloud size={32} />
                     </div>
-                    <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Cloud Engineering</h1>
-                    <p className="text-slate-300 max-w-2xl mx-auto">Scalable infrastructure, containerization, and cloud-native architecture.</p>
+                    <h1 className="text-3xl md:text-5xl font-bold text-slate-200 mb-4 font-orbitron tracking-wide neon-text">Cloud Engineering</h1>
+                    <p className="text-slate-400 max-w-2xl mx-auto font-mono text-sm">Scalable infrastructure, containerization, and cloud-native architecture.</p>
                 </div>
             </div>
 

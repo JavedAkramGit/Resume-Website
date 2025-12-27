@@ -14,6 +14,7 @@ import AIAchievements from './pages/achievements/AI';
 import LeadershipAchievements from './pages/achievements/Leadership';
 
 import Achievements from './pages/Achievements';
+import ParticleBackground from './components/ParticleBackground';
 
 // wrapper to scroll to top on route change
 const ScrollToTop = () => {
@@ -29,25 +30,28 @@ const ScrollToTop = () => {
 function App() {
     return (
         <Router>
+            <ParticleBackground />
             <ScrollToTop />
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<Home />} />
-                    <Route path="experience" element={<Experience />} />
-                    <Route path="education" element={<Education />} />
-                    <Route path="projects" element={<Projects />} />
-                    <Route path="achievements" element={<Achievements />} />
+            <div className="relative z-10">
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route index element={<Home />} />
+                        <Route path="experience" element={<Experience />} />
+                        <Route path="education" element={<Education />} />
+                        <Route path="projects" element={<Projects />} />
+                        <Route path="achievements" element={<Achievements />} />
 
-                    {/* Achievement Routes */}
-                    <Route path="achievements/cloud" element={<CloudAchievements />} />
-                    <Route path="achievements/devops" element={<DevOpsAchievements />} />
-                    <Route path="achievements/devops-gitops" element={<CloudDevOpsGitOpsAchievements />} />
-                    <Route path="achievements/test-automation" element={<TestAutomationAchievements />} />
-                    <Route path="achievements/performance" element={<PerformanceAchievements />} />
-                    <Route path="achievements/ai" element={<AIAchievements />} />
-                    <Route path="achievements/leadership" element={<LeadershipAchievements />} />
-                </Route>
-            </Routes>
+                        {/* Achievement Routes */}
+                        <Route path="achievements/cloud" element={<CloudAchievements />} />
+                        <Route path="achievements/devops" element={<DevOpsAchievements />} />
+                        <Route path="achievements/devops-gitops" element={<CloudDevOpsGitOpsAchievements />} />
+                        <Route path="achievements/test-automation" element={<TestAutomationAchievements />} />
+                        <Route path="achievements/performance" element={<PerformanceAchievements />} />
+                        <Route path="achievements/ai" element={<AIAchievements />} />
+                        <Route path="achievements/leadership" element={<LeadershipAchievements />} />
+                    </Route>
+                </Routes>
+            </div>
         </Router>
     );
 }

@@ -6,11 +6,11 @@ const AchievementList = ({ items }) => {
     return (
         <div className="grid grid-cols-1 gap-6">
             {items.map((item, index) => (
-                <div key={index} className="flex gap-4 p-4 rounded-lg bg-white border border-slate-100 hover:border-blue-100 transition-colors">
+                <div key={index} className="flex gap-4 p-4 rounded-xl glass-card hover:border-neon-cyan/30 transition-colors group">
                     <div className="flex-shrink-0 mt-1">
-                        <CheckCircle2 className="w-6 h-6 text-blue-500" />
+                        <CheckCircle2 className="w-6 h-6 text-neon-cyan group-hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all" />
                     </div>
-                    <p className="text-slate-700 leading-relaxed">{item}</p>
+                    <p className="text-slate-300 leading-relaxed font-mono text-sm">{item}</p>
                 </div>
             ))}
         </div>
