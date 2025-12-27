@@ -18,46 +18,46 @@ const Home = () => {
             <div className="pt-32 pb-20 px-4 relative z-10 text-center">
                 <div className="max-w-7xl mx-auto">
                     {/* Hero Section */}
-                    <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-black/40 border border-white/10 text-[11px] font-mono text-aura-cyan mb-12 shadow-[0_0_20px_rgba(0,230,255,0.1)]">
+                    <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-white shadow-[0_5px_15px_rgba(0,184,204,0.1)] border border-slate-200 text-[11px] font-mono text-aura-cyan mb-12">
                         <span className="flex h-2 w-2 rounded-full bg-aura-cyan animate-pulse"></span>
-                        <span className="opacity-70 font-mono tracking-tighter uppercase">system_node: operational</span>
-                        <span className="font-bold opacity-30">|</span>
+                        <span className="opacity-70 font-mono tracking-tighter uppercase text-slate-500">system_node: operational</span>
+                        <span className="font-bold opacity-30 text-slate-300">|</span>
                         <span className="font-bold font-mono tracking-tighter">EST_02:30:11</span>
                     </div>
 
                     <div className="relative mb-12 group">
-                        <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter leading-[0.85] mb-4">
-                            <span className="text-slate-400 group-hover:text-aura-cyan transition-all duration-700 block group-hover:translate-x-2 group-hover:drop-shadow-[0_0_15px_rgba(0,184,204,0.4)]">ARCHITECTING</span>
-                            <span className="neon-text block">LIMITLESS</span>
-                            <span className="text-slate-400 group-hover:text-aura-purple transition-all duration-700 block group-hover:-translate-x-2 group-hover:drop-shadow-[0_0_15px_rgba(102,41,163,0.4)]">POSSIBILITIES</span>
+                        <h1 className="flex flex-col items-center justify-center gap-6 mb-20 select-none">
+                            <span className="font-tech text-xl md:text-3xl lg:text-4xl text-slate-600 transition-all duration-500 block hover:-translate-y-1 hover:text-aura-cyan cursor-default opacity-80 hover:opacity-100">ARCHITECTING</span>
+                            <span className="font-stylized font-black text-5xl md:text-6xl lg:text-7xl neon-text block py-4 tracking-tight">LIMITLESS</span>
+                            <span className="font-tech text-xl md:text-3xl lg:text-4xl text-slate-600 transition-all duration-500 block hover:translate-y-1 hover:text-aura-purple cursor-default opacity-80 hover:opacity-100 uppercase">POSSIBILITIES</span>
                         </h1>
                     </div>
 
                     {/* Terminal Window Mockup */}
                     <div className="max-w-3xl mx-auto mb-16 relative">
                         <div className="absolute inset-0 bg-aura-cyan/5 blur-3xl rounded-full"></div>
-                        <div className="relative bg-[#0A0D14]/80 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden shadow-2xl">
-                            <div className="bg-white/5 px-4 py-2 flex items-center justify-between border-b border-white/10">
+                        <div className="relative bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xl">
+                            <div className="bg-slate-50 px-4 py-2 flex items-center justify-between border-b border-slate-200">
                                 <div className="flex gap-1.5">
                                     <div className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></div>
                                     <div className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></div>
                                     <div className="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></div>
                                 </div>
-                                <div className="text-[10px] font-mono text-slate-500 uppercase tracking-widest">profile_summary.exe</div>
+                                <div className="text-[10px] font-mono text-slate-400 uppercase tracking-widest">profile_summary.exe</div>
                                 <div className="w-10"></div>
                             </div>
                             <div className="p-6 text-left font-mono text-sm md:text-base">
                                 <div className="flex gap-3 mb-2">
                                     <span className="text-aura-cyan">➜</span>
-                                    <span className="text-slate-200">cat vision.txt</span>
+                                    <span className="text-slate-900">cat vision.txt</span>
                                 </div>
-                                <div className="text-slate-400 mb-6 ml-6 border-l-2 border-white/5 pl-4 py-1 italic">
+                                <div className="text-slate-600 mb-6 ml-6 border-l-2 border-slate-100 pl-4 py-1 italic">
                                     "Architecting resilient, high-scale digital ecosystems through
                                     advanced infrastructure engineering and seamless automation."
                                 </div>
                                 <div className="flex gap-3 mb-2">
                                     <span className="text-aura-purple">➜</span>
-                                    <span className="text-slate-200">ls ./expertise</span>
+                                    <span className="text-slate-900">ls ./expertise</span>
                                 </div>
                                 <div className="text-aura-cyan/70 ml-6 grid grid-cols-2 md:grid-cols-4 gap-2 text-xs uppercase tracking-tighter font-bold">
                                     <span>[ CLOUD ]</span>

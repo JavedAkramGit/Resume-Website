@@ -32,7 +32,7 @@ function App() {
         <Router>
             <ParticleBackground />
             <ScrollToTop />
-            <div className="relative z-10">
+            <div className="relative z-0 min-h-screen">
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />

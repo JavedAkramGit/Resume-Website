@@ -68,13 +68,13 @@
     "education": [
         {
             "id": 1,
-            "degree": "Masters, Cloud and DevOps Management",
+            "degree": "M.Sc, Cloud and DevOps Management",
             "school": "IU International University of Applied Sciences",
             "year": "Mar 2023 - Mar 2025"
         },
         {
             "id": 2,
-            "degree": "Bachelor of Engineering (BE), Electrical, Electronics and Communications Engineering",
+            "degree": "Bachelor of Engineering (BE), Electronics and Communications Engineering",
             "school": "Anna University Chennai",
             "year": "Aug 2010 - May 2014"
         }

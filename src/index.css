@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Unbounded:wght@300..900&family=Michroma&family=Fira+Code&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,8 @@
 
 @layer base {
   body {
-    @apply bg-night-blue text-slate-400 antialiased font-sans selection:bg-aura-cyan/30 selection:text-aura-cyan;
+    background-color: #F1F5F9;
+    @apply text-slate-600 antialiased font-sans selection:bg-aura-cyan/30 selection:text-aura-cyan;
   }
 
   h1,
@@ -15,65 +16,74 @@
   h4,
   h5,
   h6 {
-    @apply font-sans tracking-tight font-bold text-slate-200;
+    @apply font-sans tracking-tight font-bold text-slate-900;
   }
 }
 
 /* Glassmorphism Utilities */
 @layer components {
+  .font-stylized {
+    font-family: 'Unbounded', sans-serif;
+  }
+
+  .font-tech {
+    font-family: 'Michroma', sans-serif;
+    @apply tracking-[0.3em] uppercase;
+  }
+
   .glass-panel {
-    @apply bg-[#030208]/80 backdrop-blur-xl border border-white/5;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    @apply bg-white/70 backdrop-blur-xl border border-slate-300/50;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
   }
 
   .glass-card {
-    @apply bg-black/40 backdrop-blur-md border border-white/5;
+    @apply bg-white/40 backdrop-blur-md border border-slate-300/50;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .glass-card:hover {
-    @apply border-aura-cyan/20 bg-black/60;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    @apply border-aura-cyan/30 bg-white/60;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.08);
   }
 
   .neon-text {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-aura-cyan to-aura-purple;
-    filter: drop-shadow(0 0 5px rgba(0, 184, 204, 0.2));
+    filter: drop-shadow(0 0 8px rgba(0, 184, 204, 0.15));
   }
 
   .neon-button {
-    @apply relative px-8 py-3 bg-gradient-to-r from-aura-cyan to-aura-purple rounded-lg font-bold text-slate-100 tracking-wide;
+    @apply relative px-8 py-3 bg-gradient-to-r from-aura-cyan to-aura-purple rounded-lg font-bold text-white tracking-wide;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
   }
 
   .neon-button:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 20px rgba(0, 184, 204, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 184, 204, 0.2);
   }
 
   .aura-blob {
-    @apply absolute blur-[140px] rounded-full opacity-10 pointer-events-none;
+    @apply absolute blur-[140px] rounded-full opacity-20 pointer-events-none;
     animation: blob 15s infinite;
   }
 }
 
 /* Custom scrollbar for webkit */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #070A13;
+  background: #F1F5F9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
-  border-radius: 4px;
-  border: 1px solid #334155;
+  background: #CBD5E1;
+  @apply border-2 border-solid;
+  border-color: #F1F5F9;
+  border-radius: 100vh;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
-  box-shadow: 0 0 10px rgba(0, 230, 255, 0.3);
+  background: #94a3b8;
 }

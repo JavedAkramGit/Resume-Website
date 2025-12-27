@@ -7,8 +7,8 @@ const NavLink = ({ to, children, onClick, active }) => (
         to={to}
         onClick={onClick}
         className={`block px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 font-sans tracking-wide ${active
-            ? 'text-aura-cyan bg-aura-cyan/10 ring-1 ring-aura-cyan/50'
-            : 'text-slate-400 hover:text-aura-cyan hover:bg-white/5'
+            ? 'text-aura-cyan bg-aura-cyan/10 ring-1 ring-aura-cyan/30'
+            : 'text-slate-600 hover:text-aura-cyan hover:bg-[#EBE7E0]'
             }`}
     >
         {children}
@@ -41,11 +41,11 @@ const Navbar = () => {
                 <div className="glass-panel px-6 py-3 rounded-2xl flex items-center justify-between border-white/5">
                     <div className="flex items-center">
                         <Link to="/" className="flex-shrink-0 flex items-center gap-3 group">
-                            <div className="w-10 h-10 bg-aura-cyan/10 border border-aura-cyan/20 rounded-xl flex items-center justify-center text-aura-cyan group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(0,230,255,0.2)]">
+                            <div className="w-10 h-10 bg-aura-cyan/10 border border-aura-cyan/20 rounded-xl flex items-center justify-center text-aura-cyan group-hover:scale-110 transition-transform duration-300 shadow-[0_5px_15px_rgba(0,184,204,0.1)]">
                                 <Terminal size={20} />
                             </div>
                             <div className="flex flex-col">
-                                <span className="font-bold text-lg tracking-tighter text-slate-200 leading-none">JAVEED AKRAM</span>
+                                <span className="font-bold text-lg tracking-tighter text-slate-900 leading-none">JAVEED AKRAM</span>
                                 <span className="text-[10px] text-aura-cyan font-mono tracking-[0.2em] mt-1">
                                     {(() => {
                                         const path = location.pathname;
@@ -68,8 +68,8 @@ const Navbar = () => {
                                 key={link.path}
                                 to={link.path}
                                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${isActive(link.path)
-                                    ? 'text-aura-cyan bg-aura-cyan/10 shadow-[0_0_15px_rgba(0,230,255,0.1)]'
-                                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                                    ? 'text-aura-cyan bg-aura-cyan/10 shadow-[0_5px_15px_rgba(34,211,238,0.1)]'
+                                    : 'text-slate-600 hover:text-aura-cyan hover:bg-[#EBE7E0]'
                                     }`}
                             >
                                 {link.name}
@@ -81,8 +81,8 @@ const Navbar = () => {
                             <Link
                                 to="/achievements"
                                 className={`px-4 py-2 rounded-xl text-sm font-medium inline-flex items-center gap-1 transition-all duration-300 ${location.pathname.startsWith('/achievements')
-                                    ? 'text-aura-cyan bg-aura-cyan/10 shadow-[0_0_15px_rgba(0,230,255,0.1)]'
-                                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                                    ? 'text-aura-cyan bg-aura-cyan/10 shadow-[0_5px_15px_rgba(34,211,238,0.1)]'
+                                    : 'text-slate-600 hover:text-aura-cyan hover:bg-[#EBE7E0]'
                                     }`}
                             >
                                 Achievements
@@ -90,14 +90,14 @@ const Navbar = () => {
                             </Link>
 
                             <div className="absolute right-0 w-64 mt-2 origin-top-right opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 pt-2">
-                                <div className="glass-panel p-2 rounded-xl shadow-2xl border-white/5 overflow-hidden">
-                                    <Link to="/achievements/cloud" className="flex items-center gap-3 p-2 rounded-lg text-sm text-slate-400 hover:text-slate-200 hover:bg-white/5 transition-colors">
+                                <div className="glass-panel p-2 rounded-xl shadow-2xl border-slate-300/50 overflow-hidden">
+                                    <Link to="/achievements/cloud" className="flex items-center gap-3 p-2 rounded-lg text-sm text-slate-600 hover:text-aura-cyan hover:bg-[#F5F2ED] transition-colors">
                                         <Cloud size={16} className="text-aura-cyan" /> Cloud Engineering
                                     </Link>
-                                    <Link to="/achievements/devops" className="flex items-center gap-3 p-2 rounded-lg text-sm text-slate-400 hover:text-slate-200 hover:bg-white/5 transition-colors">
+                                    <Link to="/achievements/devops" className="flex items-center gap-3 p-2 rounded-lg text-sm text-slate-600 hover:text-aura-purple hover:bg-[#F5F2ED] transition-colors">
                                         <Terminal size={16} className="text-aura-purple" /> DevOps & CI/CD
                                     </Link>
-                                    <Link to="/achievements/devops-gitops" className="flex items-center gap-3 p-2 rounded-lg text-sm text-slate-400 hover:text-slate-200 hover:bg-white/5 transition-colors">
+                                    <Link to="/achievements/devops-gitops" className="flex items-center gap-3 p-2 rounded-lg text-sm text-slate-600 hover:text-aura-magenta hover:bg-[#F5F2ED] transition-colors">
                                         <Rocket size={16} className="text-aura-magenta" /> GitOps Platforms
                                     </Link>
                                     <div className="h-px bg-white/5 my-2 mx-1"></div>
@@ -133,7 +133,7 @@ const Navbar = () => {
                                     onClick={() => setIsOpen(false)}
                                     className={`px-4 py-3 rounded-xl text-base font-medium transition-all ${isActive(link.path)
                                         ? 'bg-aura-cyan/10 text-aura-cyan'
-                                        : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                                        : 'text-slate-600 hover:text-aura-cyan hover:bg-slate-100'
                                         }`}
                                 >
                                     {link.name}
