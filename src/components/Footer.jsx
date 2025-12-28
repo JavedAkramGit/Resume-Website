@@ -1,5 +1,6 @@
 import React from 'react';
 import { Gitlab, Linkedin, Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import resumeData from '../data/resume.json';
 
 const Footer = () => {
@@ -54,10 +55,10 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-bold text-slate-900 mb-6 tracking-tight uppercase">DOMAINS</h4>
                         <ul className="space-y-3 text-sm font-medium">
-                            <li><a href="/achievements/cloud" className="hover:text-aura-cyan transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-cyan opacity-50 group-hover:opacity-100 transition-opacity"></span>Cloud Engineering</a></li>
-                            <li><a href="/achievements/devops" className="hover:text-aura-purple transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-purple opacity-50 group-hover:opacity-100 transition-opacity"></span>DevOps & CI/CD</a></li>
-                            <li><a href="/achievements/ai" className="hover:text-aura-magenta transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-magenta opacity-50 group-hover:opacity-100 transition-opacity"></span>AI Infrastructure</a></li>
-                            <li><a href="/achievements/leadership" className="hover:text-aura-cyan transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-cyan opacity-50 group-hover:opacity-100 transition-opacity"></span>Technical Leadership</a></li>
+                            <li><Link to="/achievements/cloud" className="hover:text-aura-cyan transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-cyan opacity-50 group-hover:opacity-100 transition-opacity"></span>Cloud Engineering</Link></li>
+                            <li><Link to="/achievements/devops" className="hover:text-aura-purple transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-purple opacity-50 group-hover:opacity-100 transition-opacity"></span>DevOps & CI/CD</Link></li>
+                            <li><Link to="/achievements/ai" className="hover:text-aura-magenta transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-magenta opacity-50 group-hover:opacity-100 transition-opacity"></span>AI Infrastructure</Link></li>
+                            <li><Link to="/achievements/leadership" className="hover:text-aura-cyan transition-colors flex items-center gap-2 group"><span className="w-2 h-2 rounded-full bg-aura-cyan opacity-50 group-hover:opacity-100 transition-opacity"></span>Technical Leadership</Link></li>
                         </ul>
                     </div>
                 </div>
