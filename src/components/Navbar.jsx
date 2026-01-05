@@ -33,6 +33,7 @@ const Navbar = () => {
         { name: 'Experience', path: '/experience' },
         { name: 'Projects', path: '/projects' },
         { name: 'Education', path: '/education' },
+        { name: 'Client Engagements', path: '/client-engagements' },
     ];
 
     return (
@@ -54,6 +55,7 @@ const Navbar = () => {
                                         if (path === '/projects') return 'AUTOMATE';
                                         if (path.startsWith('/achievements')) return 'SCALE';
                                         if (path === '/education') return 'DEPLOY';
+                                        if (path === '/client-engagements') return 'ENGAGE';
                                         return 'VISION';
                                     })()}
                                 </span>

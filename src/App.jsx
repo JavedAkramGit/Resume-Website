@@ -14,6 +14,7 @@ import AIAchievements from './pages/achievements/AI';
 import LeadershipAchievements from './pages/achievements/Leadership';
 
 import Achievements from './pages/Achievements';
+import ClientEngagements from './pages/ClientEngagements';
 import ParticleBackground from './components/ParticleBackground';
 
 // wrapper to scroll to top on route change
@@ -40,6 +41,7 @@ function App() {
                         <Route path="education" element={<Education />} />
                         <Route path="projects" element={<Projects />} />
                         <Route path="achievements" element={<Achievements />} />
+                        <Route path="client-engagements" element={<ClientEngagements />} />
 
                         {/* Achievement Routes */}
                         <Route path="achievements/cloud" element={<CloudAchievements />} />
