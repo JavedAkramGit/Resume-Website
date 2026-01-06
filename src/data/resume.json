@@ -159,7 +159,7 @@
             "Integrated security, quality, and operational checks directly into delivery workflows.",
             "Collaborated with cloud, security, and development teams to embed DevOps best practices across the organization.",
             "Improved delivery reliability and reduced deployment-related failures through standardized pipelines and automation.",
-            "Architected fully automated CI/CD multi-staging multi-repo pipelines using GitLab for running cross-browser, parallel, containerized test suites on in-house HRDF runners (1HRDF, CGP_Irshad, Jadarat, NLO etc)."
+            "Architected fully automated CI/CD multi-staging multi-repo pipelines using GitLab for running cross-browser, parallel, containerized test suites on in-house customized internal secure runners."
         ],
         "cloud_devops_gitops": [
             "Designed and implemented a GitOps-based delivery platform using Alibaba Cloud ACK, GitLab repositories, GitLab Container Registry, and ArgoCD.",
@@ -206,7 +206,7 @@
             "Delivered measurable impact: reducing regression time by 93%, cutting CI/CD duration by 70%, lowering flaky tests by 70%, increasing capacity by 3×, improving latency by up to 35%, reducing MTTR by 30%, and improving vendor productivity by 30%."
         ],
         "ai": [
-            "Designed and implemented an AI-driven Executive Decision Support System to assist HRDF leadership in optimizing national training programs.",
+            "Designed and implemented an AI-driven Executive Decision Support System to assist Corporate leadership in optimizing national training programs.",
             "Built AI-based decision logic to analyze training utilization, demand patterns, effectiveness indicators, and outcome metrics.",
             "Enabled leadership to identify underutilized, overfunded, or low-impact training programs and redirect investment to high-impact initiatives.",
             "Developed scenario-based decision models to simulate demand surges, capacity constraints, and budget inefficiencies.",

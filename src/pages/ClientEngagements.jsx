@@ -1,79 +1,60 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Building2, Users, Briefcase, Target, TrendingUp, Award } from 'lucide-react';
-import Section from '../components/Section';
-import Card from '../components/Card';
 
 const clientEngagementsList = [
-    {
-        title: 'Government Digital Transformation',
-        icon: Building2,
-        color: 'text-aura-cyan',
-        description: 'Leading cloud infrastructure and DevOps initiatives for government sector digital transformation.'
-    },
-    {
-        title: 'Enterprise Platform Modernization',
-        icon: Briefcase,
-        color: 'text-aura-purple',
-        description: 'Architecting scalable cloud-native platforms for enterprise-grade applications.'
-    },
-    {
-        title: 'Workforce Development Systems',
-        icon: Users,
-        color: 'text-aura-magenta',
-        description: 'Building AI-driven decision support systems for national training programs.'
-    },
-    {
-        title: 'Quality Engineering Excellence',
-        icon: Target,
-        color: 'text-aura-cyan',
-        description: 'Implementing comprehensive test automation and performance engineering frameworks.'
-    },
-    {
-        title: 'DevOps Transformation',
-        icon: TrendingUp,
-        color: 'text-aura-purple',
-        description: 'Establishing CI/CD pipelines and GitOps workflows for rapid delivery.'
-    },
-    {
-        title: 'Technical Leadership',
-        icon: Award,
-        color: 'text-aura-magenta',
-        description: 'Guiding vendor teams and establishing engineering best practices.'
-    }
+    { title: 'NBK Capital', logo: '/clients/nbk.png', alt: 'NBK Capital' },
+    { title: 'HRDF', logo: '/clients/hrdf.png', alt: 'Human Resources Development Fund' },
+    { title: 'MCIT', logo: '/clients/mcit.png', alt: 'Ministry of Communications and Information Technology' },
+    { title: 'Al Saadi Group', logo: '/clients/alsaadi.png', alt: 'Al Saadi Group' },
+    { title: 'Accenture', logo: '/clients/accenture.png', alt: 'Accenture' },
+    { title: 'First Data', logo: '/clients/firstdata.webp', alt: 'First Data' },
+    { title: 'Ministry of Culture', logo: '/clients/culture.png', alt: 'Ministry of Culture' },
+    { title: 'Ministry of Tourism', logo: '/clients/tourism.png', alt: 'Ministry of Tourism' },
+    { title: 'Ministry of Sport', logo: '/clients/sport.png', alt: 'Ministry of Sport' },
+    { title: 'Halayalla', logo: '/clients/halayalla.png', alt: 'Halayalla' },
+    { title: 'UXBERT Labs', logo: '/clients/uxbert.png', alt: 'UXBERT Labs' },
+    { title: 'Yusuf Bin Ahmed Kanoo', logo: '/clients/kanoo.jpg', alt: 'Yusuf Bin Ahmed Kanoo' },
 ];
 
 const ClientEngagements = () => {
     return (
-        <div className="relative min-h-screen py-32 px-4 overflow-hidden">
-            {/* Background Effects */}
-            <div className="aura-blob w-[500px] h-[500px] bg-aura-purple/10 top-20 right-0" />
+        <div className="relative min-h-screen overflow-hidden">
+            {/* Hero Section */}
+            <div className="relative pt-32 pb-20 px-4">
+                <div className="max-w-6xl mx-auto text-center relative z-10">
+                    <p className="text-sm text-slate-500 mb-6 tracking-wide uppercase">Contributed to Leading Organizations</p>
+                    <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                        <span className="text-slate-900">Professional </span>
+                        <span className="bg-gradient-to-r from-aura-cyan via-aura-purple to-aura-magenta bg-clip-text text-transparent">
+                            Experience
+                        </span>
+                    </h1>
+                    <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                        Organizations where I've contributed my expertise in cloud infrastructure, DevOps,
+                        and quality engineering to drive digital transformation initiatives.
+                    </p>
+                </div>
+            </div>
 
-            <div className="max-w-7xl mx-auto relative z-10">
-                <Section
-                    title="CLIENT ENGAGEMENTS"
-                    subtitle="Strategic partnerships and impactful project deliveries"
-                >
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
-                        {clientEngagementsList.map((item, index) => (
-                            <div key={index} className="group h-full">
-                                <Card className="h-full flex flex-col">
-                                    <div className="flex items-center gap-4 mb-2">
-                                        <div className={`p-2 rounded-lg bg-white/5 border border-white/10 group-hover:border-aura-cyan/30 transition-all shadow-lg`}>
-                                            <item.icon className={`h-5 w-5 ${item.color}`} />
-                                        </div>
-                                        <h3 className="text-lg font-bold text-slate-900 group-hover:text-aura-cyan group-hover:drop-shadow-[0_0_8px_rgba(0,184,204,0.5)] transition-all duration-300 tracking-tight">
-                                            {item.title}
-                                        </h3>
-                                    </div>
-                                    <p className="text-slate-700 leading-relaxed text-sm group-hover:text-slate-900 transition-colors duration-300">
-                                        {item.description}
-                                    </p>
-                                </Card>
+            {/* Logo Grid */}
+            <div className="relative py-20 px-4">
+                <div className="max-w-7xl mx-auto relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        {clientEngagementsList.map((client, index) => (
+                            <div
+                                key={index}
+                                className="group relative overflow-hidden rounded-2xl"
+                            >
+                                <div className="relative bg-white/40 backdrop-blur-md border border-white/20 hover:bg-white/60 hover:border-aura-cyan/30 hover:shadow-[0_8px_30px_rgba(0,184,204,0.15)] transition-all duration-300 cursor-default aspect-[4/3]">
+                                    <img
+                                        src={client.logo}
+                                        alt={client.alt}
+                                        className="absolute inset-0 w-full h-full object-contain p-8 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                                    />
+                                </div>
                             </div>
                         ))}
                     </div>
-                </Section>
+                </div>
             </div>
         </div>
     );
