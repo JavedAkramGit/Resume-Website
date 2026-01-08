@@ -10,22 +10,22 @@
     "experience": [
         {
             "id": 1,
-            "role": "Cloud & DevOps Architect",
+            "role": "Automation, Cloud & DevOps Architect",
             "company": "Confidential (Government Side)",
-            "period": "2021 - Present",
+            "period": "Mar 2023 - Present",
             "description": "Leading cloud infrastructure and DevOps transformation initiatives."
         },
         {
             "id": 2,
             "role": "Senior QA Automation Engineer",
-            "company": "Previous Company",
-            "period": "2018 - 2021",
+            "company": "WeBook",
+            "period": "Jan 2021 - Feb 2023",
             "description": "Designed enterprise test automation frameworks."
         },
         {
             "id": 3,
             "role": "QA Automation Engineer (RPA Focus)",
-            "company": "Fodex",
+            "company": "Halayalla",
             "period": "May 2022 - Feb 2023",
             "description": "Specialized in robotic process automation and quality assurance."
         },
@@ -39,22 +39,22 @@
         {
             "id": 5,
             "role": "Technical Event Supervisor",
-            "company": "Freelance",
-            "period": "May 2022 - Sep 2022",
+            "company": "UXBERT LABS",
+            "period": "May 2020 - Sep 2022",
             "description": "Supervised technical aspects of events."
         },
         {
             "id": 6,
             "role": "Full-stack Developer",
             "company": "Self-Employed (Past time)",
-            "period": "Apr 2022 - May 2022",
+            "period": "Apr 2020 - May 2020",
             "description": "Developed full-stack web applications."
         },
         {
             "id": 7,
             "role": "Software Specialist",
             "company": "Yusuf Bin Ahmed Kanoo Company Limited",
-            "period": "Apr 2016 - Apr 2020",
+            "period": "Apr 2017 - Apr 2020",
             "description": "Managed software solutions and technical support."
         },
         {
@@ -88,8 +88,8 @@
     "projects": [
         {
             "id": 1,
-            "title": "Government Cloud Migration",
-            "description": "Led the migration of critical services to Alibaba Cloud using ACK and Terraform.",
+            "title": "Government Cloud Infrastructure Automation",
+            "description": "Designed a multi-layered Automation system to deploy entire cloud infrastructure on Alibaba Cloud using ACK, Terraform and custom modules.",
             "tech": [
                 "Alibaba Cloud",
                 "Kubernetes",
